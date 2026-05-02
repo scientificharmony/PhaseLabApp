@@ -65,12 +65,21 @@
     backdrop-filter: blur(8px);
   }
   .nav-logo {
-    display: flex;
-    align-items: center;
+    font-family: 'Orbitron', monospace;
+    font-weight: 900;
+    font-size: 1.1rem;
+    letter-spacing: 0.15em;
+    color: var(--orange);
   }
-  .nav-logo img {
-    height: 50px;
-    width: auto;
+  
+  .hero-logo {
+    margin-bottom: 2rem;
+    animation: fadeUp 0.5s ease both;
+  }
+  .hero-logo img {
+    max-width: 400px;
+    width: 80%;
+    height: auto;
   }
   .nav-cta {
     background: var(--pink);
@@ -493,9 +502,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">
-    <img src="phaseline-logo_copy.png" alt="PhaseLab">
-  </div>
+  <div class="nav-logo">PHASELAB</div>
   <a href="https://play.google.com/store/apps/details?id=com.phaselab.pro" class="nav-cta" target="_blank">Get it — £5.99</a>
 </nav>
 
@@ -506,6 +513,9 @@
   <div class="hero-glow glow-cyan"></div>
 
   <div class="hero-content">
+    <div class="hero-logo">
+      <img src="phaseline-logo_copy.png" alt="PhaseLab">
+    </div>
     <div class="hero-badge">ANDROID EXCLUSIVE · PROFESSIONAL GRADE</div>
     <h1>
       The <span class="orange">Pro Groovebox</span><br>
